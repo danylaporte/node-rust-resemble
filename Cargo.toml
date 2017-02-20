@@ -1,0 +1,14 @@
+[package]
+name = "resemble-node"
+version = "0.1.0"
+authors = ["Dany Laporte <dany_laporte@hotmail.com>"]
+
+[lib]
+name = "resemble_node"
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "0.2.0"
+image = "*"
+rust-resemble = { git = "https://github.com/danylaporte/rust-resemble.git" }
+
