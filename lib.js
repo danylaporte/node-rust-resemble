@@ -4,7 +4,7 @@ var ref = require('ref');
 var u8ptr = ref.refType(ref.types.void);
 var libname = 'libresemble_node';
 
-if (process.platform)
+if (process.platform === 'win32')
     libname = 'resemble_node';
 
 var libm = ffi.Library(path.join(__dirname, 'target/release/' + libname), {
