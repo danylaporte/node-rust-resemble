@@ -1,13 +1,13 @@
 {
-  "name": "rust-resemble-node",
+  "name": "node-rust-resemble",
   "version": "1.0.0",
-  "description": "",
+  "description": "Analyze and compare images",
   "main": "lib.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "co": "^4.6.0",
     "ffi": "^2.2.0",
