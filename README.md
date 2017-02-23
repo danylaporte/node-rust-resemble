@@ -33,5 +33,5 @@ var img1 = fs.readFileSync('people1.jpg');
 var img2 = fs.readFileSync('people2.jpg');
 
 // compare those 2 images
-var mismatch_percent = resemble.compare_images(img1, img2);
+var mismatch_percent = resemble.compare_images(img1, img2, { type1: 'jpg', type2: 'jpg' });
 ```
