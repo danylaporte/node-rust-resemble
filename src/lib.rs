@@ -4,6 +4,7 @@ extern crate rust_resemble as resemble;
 
 use libc::{c_double, size_t};
 use image::load_from_memory;
+use std::mem::forget;
 
 #[no_mangle]
 pub extern "C" fn compare_images(img1: *const u8,
@@ -25,5 +26,9 @@ pub extern "C" fn compare_images(img1: *const u8,
     let opts = resemble::ComparisonOptions::new().ignore_antialiasing();
 
     let r = resemble::compare_images(&img1, &img2, &opts);
+
+    forget(img1);   // do not free that memory
+    forget(img2);   // do not free that memory
+
     r.mismatch_percent
 }
