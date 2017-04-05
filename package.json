@@ -9,8 +9,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "co": "^4.6.0",
-    "ffi": "^2.2.0",
-    "jimp": "^0.2.27"
+    "ffi": "^2.2.0"
+  },
+  "devDependencies": {
+    "fs-promise": "^2.0.2"
   }
 }
