@@ -32,6 +32,10 @@ var resemble = require('node-rust-resemble');
 var img1 = fs.readFileSync('people1.jpg');
 var img2 = fs.readFileSync('people2.jpg');
 
-// compare those 2 images
-var mismatch_percent = resemble.compare_images(img1, img2);
+// compare those 2 images and get mismatch percentage
+var mismatch_percent = resemble.get_mismatch_percent(img1, img2);
+
+// compare those 2 images and get a diff image
+var diff_image = resemble.get_diff_image(img1, img2);
+fs.writeFileSync('diff.png', diff_image);
 ```

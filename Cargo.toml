@@ -10,5 +10,5 @@ crate-type = ["dylib"]
 [dependencies]
 libc = "0.2.0"
 image = "*"
-rust-resemble = { git = "https://github.com/danylaporte/rust-resemble.git" }
+rust_resemble = { git = "https://github.com/danylaporte/rust-resemble.git" }
 

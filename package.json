@@ -10,7 +10,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "ffi": "^2.2.0"
+    "ffi": "^2.2.0",
+    "ref-array": "^1.2.0"
   },
   "devDependencies": {
     "fs-promise": "^2.0.2"
