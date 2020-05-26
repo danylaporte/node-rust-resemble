@@ -1,6 +1,6 @@
 {
   "name": "node-rust-resemble",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Analyze and compare images",
   "main": "lib.js",
   "scripts": {

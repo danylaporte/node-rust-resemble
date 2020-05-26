@@ -8,7 +8,7 @@ name = "resemble_node"
 crate-type = ["dylib"]
 
 [dependencies]
-libc = "0.2.0"
-image = "0.12.3"
+libc = "0.2"
+image = "0.23"
 rust_resemble = { git = "https://github.com/danylaporte/rust-resemble.git" }
 
